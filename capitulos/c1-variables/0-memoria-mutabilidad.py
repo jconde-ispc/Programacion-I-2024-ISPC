@@ -1,6 +1,6 @@
 """
 Los programas están formados por código y datos. Pero a nivel interno de la memoria del
-ordenador no son más que una secuencia de bits. La interpretación de estos bits depende del
+ordenador no son más que ufna secuencia de bits. La interpretación de estos bits depende del
 lenguaje de programación, que almacena en la memoria no sólo el puro dato sino distintos
 metadatos.1
 Cada «trozo» de memoria contiene realmente un objeto, de ahí que se diga que en Python
@@ -22,16 +22,16 @@ apuntar el nombre de la variable a una zona de memoria en el que se representa e
 a = 10
 b = a
 
-print(f"el id de a es {id(a)}")
-print(f"el id de b es {id(b)}")
+print("11111 el id de a es {id(a)}")
+print(f"11111 el id de b es {id(b)}")
 
 a = 5
 
-print(f"el id de a es {id(a)}")
-print(f"el id de b es {id(b)}")
+print(f"2222 el id de a es {id(a)}")
+print(f"2222 el id de b es {id(b)}")
 
-print(f"El valor de la variable a es {a}")
-print (f"El valor de la variable b es {b}")
+print(f"El valor de la variable a es {a}") #5
+print (f"El valor de la variable b es {b}") #?
 
 """
 Cuando la zona de memoria que ocupa el objeto se puede modificar hablamos de tipos de

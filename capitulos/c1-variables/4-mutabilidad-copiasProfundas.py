@@ -7,5 +7,5 @@ a = [2,3,[100,101],4]
 import copy
 b = copy.deepcopy(a)
 a[2].append(102)
-print([2]) #[100,101]
+print(b[2]) #[100,101]
 print(a[2] is b[2])# False
