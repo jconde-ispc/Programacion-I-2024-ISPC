@@ -18,10 +18,15 @@ def best_student(**marks):
     print(f"{marks=}")
     max_mark = -1
     for student, mark in marks.items():
+        print(f"{student=} y {mark=}")
         if mark > max_mark:
             max_mark = mark
-    best_student = student
+            best_student = student
     return best_student
 
 print(best_student(ana=8, antonio=6, inma=9, javier=7)) #marks={ ana : 8, antonio : 6, inma : 9, javier : 7} output: inma
 
+print("------------------------------------------------")
+marks = dict(ana=8, antonio=6, inma=9, javier=7)
+#best_student(marks)#TypeError: best_student() takes 0 positional arguments but 1 was given
+print(f"{best_student(**marks)=}")
