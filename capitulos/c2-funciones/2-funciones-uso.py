@@ -1,13 +1,13 @@
-import funciones2
+import moduloEjemplo as modEjemplo
 
-funciones2.pedirNumero()
+modEjemplo.pedirNumero()
 
 
 while True:
     nombre = input('Ingrese un nombre')
     mensaje = input('Ingrese un mensaje')
 
-    funciones2.saludar(nombre,mensaje)
+    modEjemplo.saludar(nombre,mensaje)
 
     opcion = input('¿Salir? s/n')
     if(opcion == 's'):
