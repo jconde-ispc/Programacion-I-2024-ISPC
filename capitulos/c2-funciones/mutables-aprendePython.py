@@ -16,20 +16,20 @@ def buggy(arg, result=[]):
 
 print("PARTE 1 ----------------------------------")
 
-buggy('a')
+buggy('a',[])
 #['a']
-buggy('b')
+buggy('b',[])
 #['b']
 buggy('a' , [ 'x','y' ,'z' ])#[ 'x' , 'y' , 'z' , 'a' ]
 buggy('b' , [ 'x','y' ,'z' ])#[ 'x' , 'y' , 'z' , 'b' ]
 
 #Aparentemente todo está funcionando de manera correcta, pero veamos qué ocurre en las siguientes llamadas:
 print("PARTE 2 ----------------------------------")
-buggy('a')
-#[ a ]
+buggy('a') #al no pasarle el segundo parametro, toma el que tiene por defecto
+#[ 'a' ]
 
-buggy('b') # Se esperaría [´b´]
-#[ a , b ]
+buggy('b') # Se esperaría ['b'].  #al no pasarle el segundo parametro, toma el que tiene por defecto
+#[ 'a' , 'b' ]
 
 """
 Obviamente algo no ha funcionado correctamente. Se esperaría que result tuviera una lista
